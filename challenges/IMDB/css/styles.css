@@ -1,0 +1,377 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.user-header {
+  background-attachment: fixed;
+  background-image: url(../img/capa-madmax2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.user-header:after {
+  background: linear-gradient(0deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 75%);
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.user-menu {
+  z-index: 100;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+.user-menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.user-options {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-options li {
+  margin: 0 25px;
+}
+
+.user-options li a,
+.catalog-menu-list li a {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s ease-in-out;
+}
+
+.user-options li a:hover {
+  color: #e4bb23;
+}
+
+.user-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-image {
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+  height: 45px;
+  width: 45px;
+  margin-right: 15px;
+}
+
+.user-image img {
+  width: 100%;
+  height: auto;
+}
+
+.user-name {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .container {
+  position: relative;
+  z-index: 100;
+}
+
+.title {
+  color: #fff;
+  font-size: 6.5em;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.gender {
+  display: flex;
+  margin: 15px 0 30px;
+  font-size: 13px;
+}
+
+.gender a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 15px;
+  transition: color .2s ease-in-out;
+}
+
+.gender a:hover {
+  color: #e4bb23;
+}
+
+.content-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e4bb23;
+  padding: 15px 50px;
+  color: #000;
+  font-size: 1.5em;
+  border-radius: 40px;
+  position: relative;
+  transition: background-color .2s ease-in-out;
+}
+
+.content-button:hover {
+  background-color: #bc9a1d;
+}
+
+.content-button i {
+  font-size: 1.5em;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+.information {
+  padding: 20px 0;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.information p:last-child {
+  color: #bc9a1d;
+}
+
+.catalog {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.catalog-menu {
+  width: 100%;
+}
+
+.catalog-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.catalog-menu-list li {
+  margin: 0 20px;
+}
+
+.catalog-menu-list li a {
+  color: #e4bb23;
+  display: inline-block;
+  padding: 25px 0;
+}
+
+.catalog-menu-list li a:hover {
+  box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.catalog-films-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.catalog-films-list li {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 24%;
+}
+
+.film-poster {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.film-poster img {
+  width: 100%;
+  height: auto;
+}
+
+.film-poster-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .5);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 80px 20px;
+  position: absolute;
+  transition: all .2s ease-in-out;
+  width: 100%;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.catalog-films-list li:hover .film-poster-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.film-poster-info h3 {
+  color: #e4bb23;
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.film-poster-link {
+  color: #fff;
+  font-size: 5em;
+  transition: color .2s ease-in-out;
+}
+
+.film-poster-link:hover {
+  color: #e4bb23;
+}
+
+.film-synopsis {
+  padding: 10px;
+  width: 100%;
+}
+
+.film-synopsis-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.synopsis-gender {
+  margin: 10px 0;
+  display: flex;
+}
+
+.synopsis-gender a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #e4bb23;
+}
+
+.synopsis-gender a:hover {
+  text-decoration: underline;
+}
+
+.film-score {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.film-score i {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.film-score i:hover {
+  color: #e74c3c;
+}
+
+.user-footer {
+  background-color: #fff;
+  color: #bababa;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.user-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.footer-list li {
+  margin: 0 20px;
+}
+
+.footer-list li:last-child {
+  margin-right: 0;
+}
+
+.footer-list li a {
+  font-size: 2.5em;
+  color: #bababa;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.icon-twitter a:hover {
+  color: #55acee;
+}
+
+.icon-facebook a:hover {
+  color: #3b5998;
+}
+
+.icon-instagram a:hover {
+  color: #e95950;
+}
